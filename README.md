@@ -25,11 +25,13 @@ This file contains a number of front-end interview questions that can be used wh
 #### General Questions:
 
 * What did you learn yesterday/this week?
+
 * What excites or interests you about coding?
 * What is a recent technical challenge you experienced and how did you solve it?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
 * Which version control systems are you familiar with?
+  Git
 * Can you describe your workflow when you create a web page?
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
@@ -37,18 +39,33 @@ This file contains a number of front-end interview questions that can be used wh
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
+  Minify files
+  Optimize images
+  Enable browswer cacheing
+  Minimize HTTP requests
+  Reduce server response time
+  Compress pages
+  Optimize your CSS, by having only 1 external style sheet
+  Use inline styling for top of page loading
+  Reduce redirects
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
+  Change my editor to the autocomplete with spaces
 * Describe how you would create a simple slideshow page.
 * If you could master one technology this year, what would it be?
+  ElasticSearch
 * Explain the importance of standards and standards bodies.
 * What is Flash of Unstyled Content? How do you avoid FOUC?
+  Hide the content until page is loaded
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
+  CSS is great for simple stuff. But JS better for more complex stuff
 * What does CORS stand for and what issue does it address?
+  Cross Origin Resource Sharing: relaxes the same-origin policy by allowing request to outside resources, like a REST Api
 
 #### HTML Questions:
 
 * What does a `doctype` do?
+  Tells the browser what version of HTML to use
 * What's the difference between full standards mode, almost standards mode and quirks mode?
 * What's the difference between HTML and XHTML?
 * Are there any problems with serving pages as `application/xhtml+xml`?
@@ -67,10 +84,12 @@ This file contains a number of front-end interview questions that can be used wh
 * What is the difference between classes and IDs in CSS?
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Describe Floats and how they work.
+  Ignore flow rules and move to left or right side of container, allowing things to flow around
 * Describe z-index and how stacking context is formed.
 * Describe BFC(Block Formatting Context) and how it works.
 * What are the various clearing techniques and which is appropriate for what context?
 * Explain CSS sprites, and how you would implement them on a page or site.
+  Multiple images in one image to reduce server load time. Using CSS you show only what you need at a time.
 * What are your favourite image replacement techniques and which do you use when?
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
@@ -116,6 +135,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What's the difference between `.call` and `.apply`?
 * Explain `Function.prototype.bind`.
 * When would you use `document.write()`?
+  Opening and writing to the document some stream. Or for testing.
 * What's the difference between feature detection, feature inference, and using the UA string?
 * Explain Ajax in as much detail as possible.
 * What are the advantages and disadvantages of using Ajax?
@@ -159,6 +179,31 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * What tools would you use to test your code's functionality?
 * What is the difference between a unit test and a functional/integration test?
 * What is the purpose of a code style linting tool?
+
+#### JS Functional vs. OOP Questions:
+
+* What is a namespace?
+* What is a class?
+* What is a class constructor?
+* What is inheritance?
+* What is Encapsulation?
+* What is Abstraction?
+* What is Polymorphism?
+* https://github.com/MaximAbramchuck/awesome-interview-questions#javascript
+
+#### Angular Questions:
+
+* What is transclusion in Angular?
+  Grabbing data from one element to use in another element somewhere else
+* What is a directive?
+* What is the difference between a component and a container?
+* What are some drawbacks of Angular 1?
+  Trouble handling a lot of state. It has to watch for everything and repaint often. Not very performant with lots of state.
+
+#### Internet Questions:
+
+*What happens when you hit enter on a web browser after typing in a URL?
+  Goes through your router to a DNS server to look up the IP address. If it doesn't have it, it goes all the way up to the 
 
 #### Performance Questions:
 
